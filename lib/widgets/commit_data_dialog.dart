@@ -10,8 +10,9 @@ class CommitDataDialog extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Consumer<CommitProvider>(builder: (context, value, child) {
-      return Dialog(
+    return Consumer<CommitProvider>(
+      builder: (context, value, child) {
+        return Dialog(
           child: value.isLoading
               ? Container(
                   padding: const EdgeInsets.all(8),
@@ -39,7 +40,9 @@ class CommitDataDialog extends StatelessWidget {
                       ),
                     ],
                   ),
-                ));
-    });
+                ),
+        );
+      },
+    );
   }
 }

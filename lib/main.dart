@@ -8,6 +8,7 @@ import 'package:urbarn_match_assignment/services/github_api_service.dart';
 import 'package:urbarn_match_assignment/widgets/repo_list_tile.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(const MyApp());
 }
 
